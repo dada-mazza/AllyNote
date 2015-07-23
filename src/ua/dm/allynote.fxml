@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vBox" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ua.dm.Controller">
+
+    <HBox fx:id="box1" alignment="BASELINE_RIGHT">
+        <Label text="AllyNote" alignment="CENTER" prefWidth="300"/>
+        <Button fx:id="b_" onAction="#onClick_" text="_"/>
+        <Button fx:id="bX" onAction="#onClickX" text="X"/>
+    </HBox>
+
+    <VBox fx:id="box2">
+        <CheckBox fx:id="cb12" onAction="#onSelect12" text="12"/>
+        <CheckBox fx:id="cb42" onAction="#onSelect42" text="42"/>
+        <CheckBox fx:id="cb201" onAction="#onSelect201" text="201"/>
+        <TextField fx:id="tfAll" maxWidth="50.0" text="0"/>
+    </VBox>
+
+    <VBox fx:id="box3" alignment="CENTER">
+        <Circle fill="DODGERBLUE" radius="10.0" stroke="BLACK" strokeType="INSIDE"/>
+        <Button fx:id="bChooser" onAction="#onSelectDirectory" text="Directory Chooser"/>
+        <TreeView fx:id="treeView"/>
+    </VBox>
+
+</VBox>
